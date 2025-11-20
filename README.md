@@ -1,4 +1,6 @@
                                          Atliq-Hospitality-Insights-360
+                                         
+                                         DOMAIN:-  Hospitality Analytics 
 Executive Summary
 <img width="1397" height="648" alt="Executive Summary" src="https://github.com/user-attachments/assets/3b4071cc-fcf3-46e1-a67a-1f8afd9612ea" />
 Property Performance
