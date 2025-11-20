@@ -16,65 +16,65 @@ This project analyzes the business performance of AtliQ Hospitality, a chain of 
 Using Power BI, the dashboard provides a 360° view of revenue trends, occupancy performance, booking behavior, cancellation rates, customer ratings, property comparison, and city-wise profitability. The main objective is to help the hospitality team make data-driven decisions related to pricing, demand forecasting, property performance, customer experience, and strategic business expansion.
 
                                                     Key Business Questions
-•	How are revenue, occupancy, and bookings performing overall?
-•	Which cities, room types, and platforms contribute the most to revenue?
-•	How do weekdays and weekends impact business performance?
-•	Which properties are underperforming and require attention?
-•	How do cancellation rates and customer ratings affect revenue?
-•	What are the weekly demand patterns and seasonality trends?
+                                                    
+1. How are revenue, occupancy, and bookings performing overall?
+2. 	Which cities, room types, and platforms contribute the most to revenue?
+3. 	How do weekdays and weekends impact business performance?
+4. 	Which properties are underperforming and require attention?
+5. 	How do cancellation rates and customer ratings affect revenue?
+6. 	What are the weekly demand patterns and seasonality trends?
 
 
                                                        Key Insights
                                                        
-•	Total Revenue:-  1.71B, but Occupancy is only 58% → large revenue opportunity.
-•	Cancellation Rate is high (25%), causing booking instability.
-•	Mumbai contributes ~40% of total revenue, making it the strongest market.
-•	AtliQ Exotica, Palace & City contribute over 50% of all revenue.
-•	AtliQ Seasons underperforms with low revenue and poor rating (2.29).
-•	Weekdays generate more revenue, while weekends push occupancy.
-•	Elite & Standard rooms dominate bookings, while Premium & Presidential drive higher revenue per booking.
-•	Week 32 shows an abnormal drop in revenue & bookings → requires investigation.
+1. Total Revenue:-  1.71B, but Occupancy is only 58% → large revenue opportunity.
+2. Cancellation Rate is high (25%), causing booking instability.
+3. 	Mumbai contributes ~40% of total revenue, making it the strongest market.
+4. 	AtliQ Exotica, Palace & City contribute over 50% of all revenue.
+5. 	AtliQ Seasons underperforms with low revenue and poor rating (2.29).
+6. Weekdays generate more revenue, while weekends push occupancy.
+7. 	Elite & Standard rooms dominate bookings, while Premium & Presidential drive higher revenue per booking.
+8. 	Week 32 shows an abnormal drop in revenue & bookings → requires investigation.
 
 
                                            What’s Included in the Dashboard
                                            
-•	Overview / Executive KPIs:-   Revenue, RevPAR, ADR, DSRN, Occupancy %, Realisation %, Cancellation %, Avg Rating.
-•	Weekday vs Weekend split:-   Separate KPI tiles for each to reveal different demand profiles.
-•	Revenue Contributors:-   Top properties, cities, platforms, room classes and categories.
-•	Key Metrics by Property:-   Revenue, Occupancy, Cancellation, Capacity, Rating.
-•	Booking % by Room Class:-  Treemap / distribution visualization.
-•	Weekly Trends:-   Time series for Revenue, Bookings, Occupancy with weekly granularity.
-•	Segment Analytics:-   City-level, Room-class, Category (Business vs Luxury) performance and revenue-per-booking.
+1. 	Overview / Executive KPIs:-   Revenue, RevPAR, ADR, DSRN, Occupancy %, Realisation %, Cancellation %, Avg Rating.
+2. 	Weekday vs Weekend split:-   Separate KPI tiles for each to reveal different demand profiles.
+3.  Revenue Contributors:-   Top properties, cities, platforms, room classes and categories.
+4. 	Key Metrics by Property:-   Revenue, Occupancy, Cancellation, Capacity, Rating.
+5. 	Booking % by Room Class:-  Treemap / distribution visualization.
+6. 	Weekly Trends:-   Time series for Revenue, Bookings, Occupancy with weekly granularity.
+7. 	Segment Analytics:-   City-level, Room-class, Category (Business vs Luxury) performance and revenue-per-booking.
 
                                                     Tools & Technologies Used
                                                     
-•	Power BI.
-o	DAX Measures.
-o	Data Modeling (Star Schema).
-o	Relationships & Calculations.
-o	Interactive Visualizations & Slicers.
-•	Excel/CSV (Data Source).
-•	Power Query for data cleaning.
-•	GitHub for version control & documentation.
+1. 	Power BI.
+2. 	DAX Measures.
+3. 	Data Modeling (Star Schema).
+4. 	Relationships & Calculations.
+5. Interactive Visualizations & Slicers.
+6. 	Excel/CSV (Data Source).
+7. Power Query for data cleaning.
+8. 	GitHub for version control & documentation.
 
                                                                  
                                                                   KPIs Tracked
 
-NetRevenue = SUM(Bookings[Revenue]) 
-
-OccupancyPct = DIVIDE(SUM(Bookings[OccupiedRoomNights]), SUM(Calendar[SellableRoomNights])).
-ADR (Average Daily Rate) = DIVIDE([NetRevenue], SUM(Bookings[OccupiedRoomNights])).
-RevPAR = [ADR] * [OccupancyPct].
-Cancellation Rate = DIVIDE(SUM(Bookings[CancelledBookings]), SUM(Bookings[TotalBookings])).
-Keep DAX measures centralized in a Measures table and document their definitions in docs/KPI_Definitions.md.
+1. NetRevenue = SUM(Bookings[Revenue]) 
+2. OccupancyPct = DIVIDE(SUM(Bookings[OccupiedRoomNights]), SUM(Calendar[SellableRoomNights])).
+3. ADR (Average Daily Rate) = DIVIDE([NetRevenue], SUM(Bookings[OccupiedRoomNights])).
+4. RevPAR = [ADR] * [OccupancyPct].
+5. Cancellation Rate = DIVIDE(SUM(Bookings[CancelledBookings]), SUM(Bookings[TotalBookings])).
+6. Keep DAX measures centralized in a Measures table and document their definitions in docs/KPI_Definitions.md.
 
 
                                            Business Impact
                                            
-•	Improved visibility into city-wise and property-wise profitability.
-•	Clear identification of high-risk areas (cancellations, low occupancy).
-•	Better revenue strategy using room class trends.
-•	Data-driven roadmap for operational improvements.
+1. 	Improved visibility into city-wise and property-wise profitability.
+2. 	Clear identification of high-risk areas (cancellations, low occupancy).
+3. 	Better revenue strategy using room class trends.
+4.  Data-driven roadmap for operational improvements.
 
                                            
                                        Recommendations 
@@ -92,8 +92,8 @@ Keep DAX measures centralized in a Measures table and document their definitions
 5.	Refresh visuals; validate totals against source data.
 
                                                  Contact 
-•	Owner: WANI UMAR 
-•	Email :-umar.1analytics@gmail.com 
-•	LINKEDIN:- www.linkedin.com/in/waniumer-analytics 
-•	GITHUB:- 
+1.  Owner: WANI UMAR 
+2. Email :-umar.1analytics@gmail.com 
+3. 	LINKEDIN:- www.linkedin.com/in/waniumer-analytics 
+4.  GITHUB:- https://github.com/waniumer-analytics/Atliq-Hospitality-Insights-360 
 
